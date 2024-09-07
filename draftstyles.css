@@ -279,6 +279,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     gap: 50px;
+    padding-bottom: 50px;
 }
 
 .text-content {
@@ -310,8 +311,90 @@ body {
     cursor: pointer;
 }
 
+@media screen and (max-width: 1366px) {
+    .about-content {
+        display: flex;
+        flex-direction: column; /* Align content vertically */
+        align-items: center; /* Center align items horizontally */
+        text-align: center; /* Center text */
+        padding: 20px; /* Add padding for better spacing */
+    }
+
+    .story-image, .text-section {
+        flex: none; /* Prevent items from growing or shrinking */
+        max-width: 100%; /* Ensure items do not exceed container width */
+        margin-bottom: 20px; /* Add spacing between sections */
+    }
+
+    .story-image img {
+        max-width: 80%; /* Adjust size of the image */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .text-section {
+        max-width: 80%; /* Adjust the width of text section */
+    }
+
+    .text-content {
+        margin: 0; /* Reset margins */
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .main-banner {
+        padding: 40px; /* Reduce padding for smaller screens */
+        flex-direction: column; /* Stack banner content vertically */
+        text-align: center; /* Center text */
+    }
+
+    .banner-content {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center content horizontally */
+        gap: 20px; /* Adjust spacing between image and text */
+    }
+
+    .banner-image {
+        max-width: 100%; /* Ensure image fits within the container */
+    }
+
+    .banner-text {
+        max-width: 100%; /* Ensure text fits within the container */
+        margin: 0; /* Remove margin for better alignment */
+    }
+
+    .banner-text h2 {
+        font-size: 40px; /* Adjust font size for smaller screens */
+    }
+
+    .banner-text p {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        margin-bottom: 20px; /* Adjust margin */
+    }
+
+    .products-menu {
+        padding: 30px; /* Reduce padding for smaller screens */
+    }
+
+    .products-container {
+        flex-direction: column; /* Stack product cards vertically */
+        align-items: center; /* Center align product cards */
+        gap: 20px; /* Adjust spacing between product cards */
+    }
+
+    .product-card {
+        width: 90%; /* Ensure product cards fit within the container */
+        max-width: 400px; /* Set a maximum width for product cards */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .product-card img {
+        max-width: 100%; /* Ensure image fits within the card */
+    }
+}
+
 /* Responsive Styles */
-@media screen and (max-width: 674px) {
+@media screen and (max-width: 840px) {
+
     .nav-menu {
         display: none; /* Hide menu items by default */
         flex-direction: column;
@@ -336,9 +419,7 @@ body {
     .menu-toggle:checked ~ .nav-menu {
         display: flex;
     }
-}
 
-@media screen and (max-width: 840px) {
     .nav-menu a {
         text-decoration: none;
         margin: 0 35px;
