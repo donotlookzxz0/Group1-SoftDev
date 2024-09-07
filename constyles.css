@@ -35,6 +35,15 @@
     margin-bottom: 0px;
 }
 
+.row2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 40px;
+    
+}
+
 .below-contact-container {
     margin: 10px
 }
@@ -62,6 +71,3 @@
 .link:hover {
     text-decoration: underline;
 }
-
-
-
